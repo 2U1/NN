@@ -7,11 +7,12 @@ For team assignment
     NN
     ├── README.md
     ├── Assignment1
-    │     ├── Gradient.ipynb
-    │     └── Linear algebra.ipynb
+    │     ├── gradient_descent.ipynb
 
 ```
 
 ## Assignment1
 
-### Optimizer
+### gradient_descent.ipynb
+Defining gradient descent from scrath and testing on covid data. Also with student data.<br>
+For bonus, plotting surface plot for loss
