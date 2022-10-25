@@ -1,0 +1,690 @@
+<!DOCTYPE HTML ><!--webapps/blackboard/web/error.jsp-->
+
+
+<html  lang="en-US-Ultra2">
+ <head>
+  <title>Error &ndash; Blackboard Learn</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta id="request-method" name="request-method" content="GET">
+  <meta name="author" content="Blackboard">
+  <meta name="copyright" content="&copy; 1997-2022 Blackboard Inc. All Rights Reserved. U.S. Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.">
+  <meta name="keywords" content="Blackboard">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"232bf20b67",applicationID:"390461942"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/ui/bb-icon3.ico">
+     <link rel="stylesheet" type="text/css" href="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/common/shared.css?v=3900.48.0-rel.18+c7edfda" id="css_0">
+     <link rel="stylesheet" type="text/css" href="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/themes/as_2015/theme.css?v=3900.48.0-rel.18+c7edfda" id="css_1">
+     <link rel="stylesheet" type="text/css" href="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/themes/as_2015/app_nav.css?v=3900.48.0-rel.18+c7edfda" id="css_2">
+     <link rel="stylesheet" type="text/css" href="/webapps/vtbe-tinymce/css/prism/prism.css?v=3900.48.0-rel.18+c7edfda" id="css_3">
+     <link rel="stylesheet" type="text/css" href="/webapps/videointegration/css/video-integration.css?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda" id="css_4">
+      <link rel="stylesheet" type="text/css" media="print" href="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/ui/styles/print.css?v=3900.48.0-rel.18+c7edfda">
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/i18n.js?v=3900.48.0-rel.18+c7edfda"></script>
+      <script language='javascript' type='text/javascript'>
+
+var JS_RESOURCES = new Object();
+
+function _init_bundle_JS_RESOURCES() {
+
+    JS_RESOURCES['validation.email'] = 'A fully qualified email address (for example, info@blackboard.com) must be entered.';
+    JS_RESOURCES['validation.radio.required'] = 'Make a selection to continue.';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click Ok to save the incomplete answer.';
+    JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+    JS_RESOURCES['active.filter.search.terms'] = 'Search Terms';
+    JS_RESOURCES['validation.points.decimal.places.error.location'] = 'Point Values are limited to 5 decimal places: {0}.';
+    JS_RESOURCES['validation.maximum_length.plural'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by {2} characters.';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click Ok to save the incomplete answer.';
+    JS_RESOURCES['validation.multiSelect.minItems'] = 'Multiselect box should contain at least {0} number of items.';
+    JS_RESOURCES['validation.cmp_field.required'] = 'A value must be provided for {0}\nwhen {1} field is not empty';
+    JS_RESOURCES['warning.email'] = 'Email address is a recommended field. Users will be unable to use parts of the system without an email address.';
+    JS_RESOURCES['validation.maximum_length.no_name.singular'] = 'Must not contain more than {0} characters.\nReduce the size of the input by one character.';
+    JS_RESOURCES['validation.multiSelect.maxItems'] = 'Multiselect box should not contain more than {0} number of items.';
+    JS_RESOURCES['validation.number'] = 'A valid numeric value must be entered: {0}.';
+    JS_RESOURCES['validation.date.required'] = 'A complete date value must be provided: {0}.';
+    JS_RESOURCES['portalmodule.section.remove'] = 'Delete: {0}?';
+    JS_RESOURCES['show.helptext'] = 'Show Help Text';
+    JS_RESOURCES['validation.password'] = 'Password cannot be empty or contain only spaces.';
+    JS_RESOURCES['validation.percent'] = 'A valid percent value between 0 and 100 must be entered.';
+    JS_RESOURCES['validation.mismatch'] = 'The values entered do not match: {0}.\nConfirm: {0}.';
+    JS_RESOURCES['validation.maximum_length.no_name.plural'] = 'Must not contain more than {0} characters.\nReduce the size of the input by {1} characters.';
+    JS_RESOURCES['validation.invalid_value'] = 'Invalid numeric value provided: {0}.';
+    JS_RESOURCES['field_name.substitute'] = '\'\'{0}\'\' input field';
+    JS_RESOURCES['validation.required'] = 'A value must be provided: {0}.';
+    JS_RESOURCES['active.filter.free.form.text.blank'] = 'Specify a value for the search text field';
+    JS_RESOURCES['validate.alignment.missing.content'] = 'You selected alignments but did not select any alignable content to copy.';
+    JS_RESOURCES['validation.system_role.reserve'] = '"bb" is not permitted at the beginning of a role ID.';
+    JS_RESOURCES['validation.date_past'] = 'The end date cannot be earlier than the start date.';
+    JS_RESOURCES['validation.invalid_chars'] = 'Contains illegal characters: {0}.\nDelete these characters: {1}';
+    JS_RESOURCES['confirm.delete_item_value'] = 'This item {0} will be deleted. Continue?';
+    JS_RESOURCES['hide.helptext'] = 'Hide Help Text';
+    JS_RESOURCES['validate.range.lessthen.str'] = 'Less Than {0}';
+    JS_RESOURCES['validation.date_past.confirm'] = 'The time is in the past.\nContinue with this time?';
+    JS_RESOURCES['validate.login.invalid.username.or.pass'] = 'Enter a username and password.';
+    JS_RESOURCES['validation.negative'] = 'A valid non-negative value must be entered: {0}.';
+    JS_RESOURCES['validation.url'] = 'A valid URL (for example, http://www.myschool.edu) must be entered.';
+    JS_RESOURCES['validate.range.overlap'] = 'criteria ({0}) overlaps criteria ({1}).';
+    JS_RESOURCES['validate.range.between.str'] = 'Between {0} and {1}';
+    JS_RESOURCES['validation.portal.tool.items.remove'] = 'Delete: {0}?';
+    JS_RESOURCES['validation.association.refresh.confirm'] = 'The associated items information might have been updated.\nClick \'OK\' to refresh the list or click \'Cancel\' to keep the current page.';
+    JS_RESOURCES['validate.enrolloptions.error.codeconflict'] = 'The Access Code Enrollment option conflicts with the selection of {instructor} Led enrollment.';
+    JS_RESOURCES['validation.points.decimal.places'] = 'Point Values are limited to 5 decimal places.';
+    JS_RESOURCES['validation.option.required'] = 'At least one option must be selected from the list.';
+    JS_RESOURCES['list.checkToSelectAllItems'] = 'Check to select all items';
+    JS_RESOURCES['active.filter.changed.alert'] = 'criteria now contains';
+    JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = 'Specify a Name in order to Save as a Reusable Object.';
+    JS_RESOURCES['validate.invalidate.number'] = 'Please input valid number instead of {0}.';
+    JS_RESOURCES['validation.valid_course_id'] = 'Course id contains illegal characters or multibyte characters.';
+    JS_RESOURCES['assessment.incomplete.confirm'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click Ok to submit assessment.';
+    JS_RESOURCES['validate.enrolloptions.error.nooption'] = 'Warning: Choose either the {instructor} Led or the Self-Enrollment option.';
+    JS_RESOURCES['validation.date_equal'] = 'The start date cannot be equal to the end date.';
+    JS_RESOURCES['validation.cmp_field.rejected'] = 'The {0} cannot be used without a corresponding {1} value.';
+    JS_RESOURCES['validation.time.required'] = 'A complete time value must be provided: {0}.';
+    JS_RESOURCES['validation.integer_number'] = 'A valid integer numeric value must be entered: {0}.';
+    JS_RESOURCES['validation.maximum_length'] = 'Must not contain more than 255 characters';
+    JS_RESOURCES['validate.enrolloptions.error.emailrequestconflict'] = 'The selected email enrollment option conflicts with the self-enrollment selection.';
+    JS_RESOURCES['invalid_char.space'] = 'space';
+    JS_RESOURCES['validate.range.morethen.str'] = 'More Than {0}';
+    JS_RESOURCES['notification.submit'] = 'Action already submitted.\nWait until the action is complete.';
+    JS_RESOURCES['validation.plain_text.confirm'] = 'To display equations correctly in this document, Smart Text or HTML format must be selected.\nClick \'OK\' to save in selected Plain Text format or click \'Cancel\' to select a new format.';
+    JS_RESOURCES['invalid_char.comma'] = 'comma';
+    JS_RESOURCES['validation.allow_negtive.percent'] = 'A valid percent value between -100 and 100 must be entered.';
+    JS_RESOURCES['confirm.remove_item'] = 'This action is final and cannot be undone. Continue?';
+    JS_RESOURCES['list.uncheckToDeselectAllItems'] = 'Uncheck to deselect all items';
+    JS_RESOURCES['validation.maximum_length.singular'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by one character.';
+    JS_RESOURCES['validation.rubric.decimalplaces'] = 'Too many decimal places. Maximum is 5.';
+    JS_RESOURCES['validation.minimum_length'] = 'A minimum of {0} characters must be entered: {1}.';
+    JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = 'Specify a location for the Reusable Object.';
+    JS_RESOURCES['assessment.incomplete.confirm.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click Ok to submit assessment.';
+    JS_RESOURCES['validation.image_type'] = 'Unknown image type: {0}. Image may not display correctly.';
+    JS_RESOURCES['validate.invalidate.number.space'] = 'Space';
+
+    JS_RESOURCES.getString = i18n_get_string;
+    JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_JS_RESOURCES();
+
+</script>
+<script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'MM/dd/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^(([0-9]{1,3}(\\,[0-9]{3})*)|[0-9]*)(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'SUN MON TUE WED THU FRI SAT';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'MMM d[ yyyy]{ \'&#8212;\'[ MMM] d yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd M/d';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['number_format.negative_prefix'] = '-';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'MDY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'Su Mo Tu We Th Fr Sa';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '0';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '0';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, MMM d, yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'MM/DD/YY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['number_format.negative_suffix'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd M/d';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+      <script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'MM/dd/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^(([0-9]{1,3}(\\,[0-9]{3})*)|[0-9]*)(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'SUN MON TUE WED THU FRI SAT';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'MMM d[ yyyy]{ \'&#8212;\'[ MMM] d yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd M/d';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['number_format.negative_prefix'] = '-';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'MDY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'Su Mo Tu We Th Fr Sa';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '0';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '0';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, MMM d, yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'MM/DD/YY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['number_format.negative_suffix'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd M/d';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+         <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/cookie.js"></script>
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/cdn.js"></script>
+    <script type="text/javascript" src="/groupjs/1A3387691FF9DA6D736DF6BDCDE02619.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/UserDataDWRFacade.js?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/MashupDWRFacade.js?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/titlebartagutils.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/groupjs/AC4E8DAD0B89B0D87079B88A52714FC4.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/CourseMenuDWRFacade.js?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/UserPageInstructionsSettingDWRFacade.js?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/dwr/engine.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/ngui/breadcrumbs.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/javascript/dwr/util.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/groupjs/695F00B9E721BF7CB7934F368C12BF01.js?v=3900.48.0-rel.18+c7edfda"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/UserDWRFacade.js?v=3900.48.0-rel.18+c7edfda_3900.48.0-rel.18+c7edfda"></script>
+    </head>
+  <body id="learn-oe-body" >
+  <div id="globalNavPageContentArea">
+<div role="region" aria-label="Current location">
+ <h2 class="hideoff">
+  Current Location
+ </h2>
+</div>
+
+<div id="breadcrumbs" role="navigation" aria-label="Breadcrumb Navigation" class="breadcrumbs clearfix ">
+ <div class="breadcrumb-controls clearfix" id="breadcrumb_controls_id">
+
+<!-- START HACK : ku.crs.del_draft -->
+<script type="text/javascript">
+    Event.observe(document,"dom:loaded", function() {
+	var saveDraft = document.getElementsByClassName('button-2')[1];
+	//window.alert(saveDraft);
+	saveDraft.style.display = 'none';
+    });
+</script>
+<!-- END HACK : ku.crs.del_draft -->
+
+<!-- START HACK : ku.crs.cht_widget -->
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M3HSGD2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151891877-2"></script>
+<script src="https://knsr44m7vgqs.statuspage.io/embed/script.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151891877-2');
+</script>
+
+    <style>
+        .hidden {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 5px;
+            z-index: 10000;
+        }
+
+        #draggable {
+            display: inline-block;
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            z-index: 10000;
+            padding: 0.4em;
+        }
+
+        .chatBorder {
+            position: fixed;
+            background: #7b031d;
+            color: #fff;
+            border-radius: 20rem;
+            cursor: pointer;
+			left: 212px;
+            box-shadow: 2px 2px 2px #111;
+            z-index: 10000;
+        }
+        .chatBorder_puller{
+            left: 25px !important;
+        }
+
+        .chatBorder .tooltiptext {
+            visibility: hidden;
+            width: 150px;
+            background-color: black;
+            color: #d1d1d1;
+            text-align: left;
+            border-radius: 15px;
+            padding: 10px 10px 10px 10px;
+
+            left: 105%;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 10000;
+        }
+
+        .chatBorder:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+            #draggable {
+                z-index: 1000 !important;
+                top: 8vh;
+            }
+        }
+
+        @media screen and (max-width: 1073px) {
+            .chatBorder {
+                left: 45px;
+            }
+
+
+        @media screen and (1074px >= width <= 1090px) {
+            .chatBorder {
+                left: 20px;
+            }
+
+        }
+
+    </style>
+
+    <script>
+        var theLanguage = $('html').attr('lang');
+        alert(theLanguage);
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+        var language = window.navigator.userLanguage || window.navigator.language;
+        var lang = language.substr(0, 2).toLowerCase()
+        jQuery(document).ready(function ($) { $('body').addClass(lang); });
+
+        jQuery(document).ready(function ($) {
+            if ($('body').hasClass('ko')) {
+                $(".lang").addClass("hidden");
+                return $("." + lang).removeClass("hidden");
+            }
+            //else if ($('body').hasClass('zh')) {
+            //    $(".lang").addClass("hidden");
+            //    return $("." + lang).removeClass("hidden");
+            //}
+        });
+    </script>
+
+    <!-- Channel Plugin Scripts -->
+    <script>
+        var course_role = "${context.CourseMembership.Role.toFieldName()}";
+        var education_level = "${context.User.EducationLevel.toFieldName()}";
+        var course_role_nm, education_level_nm;
+
+        switch (course_role) {
+            case "STUDENT":
+                course_role_nm = "학습자";
+                break;
+            case "INSTRUCTOR":
+                course_role_nm = "교수자";
+                break;
+            case "COURSE_BUILDER":
+                course_role_nm = "코스생성자";
+                break;
+            case "GRADER":
+                course_role_nm = "채점자";
+                break;
+            case "GUEST":
+                course_role_nm = "게스트";
+                break;
+            case "TEACHING_ASSISTANT":
+                course_role_nm = "수업조교";
+                break;
+            default:
+                course_role_nm = "N/A";
+                break;
+        }
+
+        switch (education_level) {
+            case "FRESHMAN":
+                education_level_nm = "1학년";
+                break;
+            case "SOPHOMORE":
+                education_level_nm = "2학년";
+                break;
+            case "JUNIOR":
+                education_level_nm = "3학년";
+                break;
+            case "SENIOR":
+                education_level_nm = "4학년";
+                break;
+            case "GRADUATE_SCHOOL":
+                education_level_nm = "대학원";
+                break;
+            case "POST_GRADUATE_SCHOOL":
+                education_level_nm = "대학원이상";
+                break;
+            default:
+                education_level_nm = "기타";
+                break;
+        }
+
+        (function () {
+            var w = window;
+            if (w.ChannelIO) {
+                return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+            }
+            var d = window.document;
+            var ch = function () {
+                ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function (args) {
+                ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+                if (w.ChannelIOInitialized) {
+                    return;
+                }
+                w.ChannelIOInitialized = true;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                s.charset = 'UTF-8';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                l();
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', l);
+            } else {
+                window.addEventListener('DOMContentLoaded', l, false);
+                window.addEventListener('load', l, false);
+            }
+        })();
+        ChannelIO('boot', {
+            "pluginKey": "71705aed-e8c1-4fbc-88cb-6d4b3cd8faf6", //please fill with your plugin key
+            "memberId": "${context.user.getOtherName()}", //fill with user id
+            "customLauncherSelector": "#draggable,#myHeader",
+            "hideDefaultLauncher": true,
+            "profile": {
+                "single_id": "${context.user.getOtherName()}",
+                "name": "${context.user.getGivenName()}",
+                "student_id": "${context.user.getUserName()}",
+                "email": "${context.user.getEmailAddress()}",
+                "mobileNumber": "${context.user.getMobilePhone()}",
+                "education_level": education_level_nm,
+                "course_role": course_role_nm,
+                "course_name": "222R [서울-대학원]신경망(영강)(NEURAL NETWORKS(English))-00분반",
+                "campus_nm": "${context.user.getCity()}",
+                "course_id": "20222R0309XAI51100",
+                "college_nm": "${context.user.getCompany()}",
+                "department_nm": "${context.user.getDepartment()}",
+                "user_role": "${context.user.getZipCode()}"
+                
+            }
+        });
+    </script>
+    <!-- End Channel Plugin -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1RXG4W610"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-K1RXG4W610');
+    </script>
+    
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3HSGD2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="header" id="myHeader">
+        <div id="draggable myHeader" class="chatBorder ui-widget-content">
+            <span class="lang ko hidden tooltiptext">어흥~<br />(온라인 강의에 대한)<br />질문주면 해결해주지~</span>
+            <span class="lang en tooltiptext">Roar~<br />(About e-Learning)<br />Let me take your query~</span>
+            <img src="https://kulms.korea.ac.kr/bbcswebdav/xid-27982452_1" width="40px" />
+        </div>
+
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+
+</body>
+<!-- END HACK : ku.crs.cht_widget -->
+
+
+
+
+
+<div id="helpTextToggle" class="helpLink hidden">
+  <a href="#" id="helpTextToggleLink" class="browseIcon">
+	<img id="helpTextToggleImg" src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/images-ltr/ci/ng/small_help_on2.gif" alt="Turn help text off and on"/></a>
+</div>
+ <input type='hidden' name='showHelperSetting' id='showHelperSetting' value=''>
+ </div>
+
+ <div class="path  noToggle">
+ <ol class="clearfix">
+    	<li
+    class="root"
+		    > <a href="/webapps/blackboard/execute/courseMain?course_id=_377664_1"  title="222R [서울-대학원]신경망(영강)(NEURAL NETWORKS(English))-00분반">        <span id="crumb_1">
+                      222R [서울-대학원]신경망(영강)(NEURAL NETWORKS(English))-00분반
+                  </span>
+      </a>          </li>
+   	<li
+        > <a href="/webapps/blackboard/content/listContent.jsp?course_id=_377664_1&content_id=_4214408_1&mode=reset"  title="Course Materials">        <span id="crumb_2">
+                      Course Materials
+                  </span>
+      </a>          </li>
+   	<li
+    class="placeholder"        >         <span id="crumb_3">
+                      COVID data
+                  </span>
+                </li>
+  </ol>
+ </div>
+
+</div>
+
+<div class="locationPane">
+ <div role="main" id="contentPanel" class="contentPaneWide error">
+    
+  <div id="content" class="contentBox ">
+   
+<div id="pageTitleDiv" class="pageTitle clearfix ">
+
+  
+<div id="pageTitleBar" class='pageTitleIcon' tabindex="0">
+    <img src="https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/images/ci/sets/set12/editpage_on.svg" alt="" id="titleicon"><h1 id="pageTitleHeader" tabindex="-1" ><span id="pageTitleText">
+  <span style="color:;">Access Denied</span>  </span></h1>
+        <span id="_titlebarExtraContent" class="titleButtons"></span>
+</div>
+
+
+</div>
+
+      <div class="container  clearfix" id="containerdiv">
+     <h2 class="hideoff">Content</h2>
+     
+<!-- START HACK : uvaNavExpand -->
+<script type="text/javascript">
+    Event.observe(document,"dom:loaded", function() {
+    document.getElementById('addBlankPageButton').style.display = "none";
+    document.getElementById('addCourseLinkButton').style.display = "none";
+    var autoExpandWidth = 1024; // Blackboard hides the navigation panel when the screen is at or below 760px (2012 Theme).
+        try {
+            if(document.getElementById('globalNavPageContentArea') && document.getElementById('navigationPane')) {
+                var puller = document.getElementById('globalNavPageContentArea').querySelector("#puller");
+                window.addEventListener('resize',function(event) {
+                    if(window.innerWidth >= autoExpandWidth && puller.classList.contains('pullcollapsed')){
+                        document.getElementById('menuPuller').click();
+                        document.getElementsByClassName('chatBorder').style.left = "212px";
+                    }
+                });
+            }
+        } catch (ex) {
+            console.log("JSHack(UvANavExpand): Exception Thrown: " + ex);
+        }
+    });
+</script>
+
+<!-- END HACK : uvaNavExpand -->
+<script type="text/javascript" src="/webapps/achievements/js/achievement.js"></script><link rel="stylesheet" href="/webapps/achievements/css/achievements.css" type="text/css" media="screen" /><script type="text/javascript">
+var jsonArray = [];
+handleAchievements(jsonArray);
+</script><div id="bbNG.receiptTag.content" tabindex="0">  <strong>Access Denied</strong><br> Either you are not logged in or you do not have the appropriate privileges to perform this action. You may have access to other parts of the course.</div><p><span class="receiptDate">Wednesday, September 28, 2022 1:43:47 PM KST</span></p><div class="taskbuttondiv_wrapper">
+<p class="taskbuttondiv" id="bottom_submitButtonRow">
+			<input  class="button-2" type="button" name="bottom_Cancel" role="button" value="Cancel" onclick="document.location='javascript:history.go(-1)';">
+		<input  class="submit button-1" name="bottom_Log In" type="submit" role="button" value="Log In" onClick="document.location='/webapps/login/?action=relogin';">
+
+</p>
+</div>
+
+   </div>
+   
+  </div>
+  
+   </div>
+</div>
+</div>
+
+  <script type="text/javascript">page.bundle.addKey('inlineconfirmation.close','Close');page.bundle.addKey('inlineconfirmation.refresh','Refresh');page.bundle.addKey('hidden.link.close.menu','End of menu. Click to return to associated item.');page.bundle.addKey('hidden.link.close.form','End of form. Click to return to associated item.');page.bundle.addKey('lightbox.loading','Loading...');page.bundle.addKey('yt.stopped','Stopped:');page.bundle.addKey('yt.playing','Playing:');page.bundle.addKey('yt.cued','Cued:');page.bundle.addKey('yt.buffering','Buffering:');page.bundle.addKey('yt.paused','Paused:');page.bundle.addKey('yt.ended','Ended:');page.bundle.addKey('yt.play','Play');page.bundle.addKey('yt.pause','Pause');page.bundle.addKey('yt.mute','Mute');page.bundle.addKey('yt.unmute','Unmute');page.bundle.addKey('lightbox.overlay','{0} has been opened as a lightbox overlaying the current page.');page.bundle.addKey('display.playerControls','Player Controls');page.bundle.addKey('display.videoPlayerControls','Video Player Controls');page.bundle.addKey('display.play','Play');page.bundle.addKey('display.stop','Stop');page.bundle.addKey('display.volumeUp','Volume Up');page.bundle.addKey('display.volumeDown','Volume Down');page.bundle.addKey('display.mute','Mute');page.bundle.addKey('display.videoStatus','Video Status');page.bundle.addKey('display.closePlayerControls','Close Player Controls');page.bundle.addKey('display.embeddedVideoPlayer','Embedded Video Player');page.bundle.addKey('display.of','of');page.bundle.addKey('display.view.on.flickr','View Photo on Flickr');page.bundle.addKey('mashups.content.data.msg','We are unable to display the mashup content. This happens if the system detects an invalid URL. Remove the mashup item and try again to resolve this issue.');page.bundle.addKey('contextmenu.frame.title','Menu frame');page.bundle.addKey('frameset.contentframe.title','Content');page.bundle.addKey('common.pair.paren','{0} ({1})');page.bundle.addKey('breadcrumbs.expand','Click to expand the breadcrumbs');</script>
+ 
+   <script type="text/javascript">
+   FastInit.addOnLoad( function()
+   {
+            if ( window.DWREngine )
+       {
+        try {DWREngine.beginBatch();} catch(ignore) {}
+       } 
+                page.decoratePageBanner();
+                                                             globalNavigation.redirectTopWindow();
+                                                             page.util.initPinBottomSubmitStep();
+                                                             new page.PageHelpToggler(true, 'Help is On: Click to hide page help.', 'Help is Off: Click to show page help.', false );
+                                                             breadcrumbs.rightMostNavItem = 'null';
+                                                             breadcrumbs.rightMostParentURL = '/webapps/blackboard/content/listContent.jsp?course_id=_377664_1&content_id=_4214408_1&mode=reset';
+                                                             if (typeof(initEditors) == 'function') { initEditors(); }; if ( typeof com !== 'undefined' ) { com.wiris.js.JsPluginViewer.parseDocument(); }; 
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             quickLinks.createHelper();
+                                                                  if ( window.DWREngine )
+       {
+         try {DWREngine.endBatch();} catch(ignore) {}
+       }
+                          BrowserSpecific.registerListeners();
+               });
+   </script>
+       
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"232bf20b67","agent":"","beacon":"bam.nr-data.net","applicationTime":17,"applicationID":"390461942","transactionName":"M1NbN0oCDxFYU0JaXAoZahdKFhUReFNCWlwKGVsPWQAKAFZRRFcdE1NbAkgTEkxbXFdQWAZZWBFcTQINV0RTXUdKRU0RTRcSTHRRWFJUAXBQD10iAhZQX1g=","queueTime":0}</script>
+</body>
+</html>
