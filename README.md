@@ -14,5 +14,10 @@ For team assignment
 ## Assignment1
 
 ### gradient_descent.ipynb
-Defining gradient descent from scrath and testing on covid data. Also with student data.<br>
+Defining gradient descent from scratch and testing on covid data. Also with student data.<br>
 For bonus, plotting surface plot for loss
+
+## Assignment2
+### threelayer.ipynb
+Defining multilayer perceptorn from scratch  and testing on arbitary data.<br>
+For bonus, implementing on pytorch
