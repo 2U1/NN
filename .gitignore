@@ -1,2 +1,3 @@
 *.zip
 mnist
+cifar-10*
